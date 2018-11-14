@@ -3,9 +3,9 @@ InstallDir "$InstDir"
 OutFile "${OUTPUTFILE}" # set through command line arguments
 
 # Links for "Add/Remove Programs"
-!define HELPURL "https://github.com/roller-project/roller/issues"
-!define UPDATEURL "https://github.com/roller-project/roller/releases"
-!define ABOUTURL "https://github.com/roller-project/roller#ethereum-go"
+!define HELPURL "https://github.com/phihung9712/exp/issues"
+!define UPDATEURL "https://github.com/phihung9712/exp/releases"
+!define ABOUTURL "https://github.com/phihung9712/exp#ethereum-go"
 !define /date NOW "%Y%m%d"
 
 PageEx license
@@ -34,8 +34,8 @@ Section "Geth" GETH_IDX
   SimpleFC::AdvAddRule "Geth UDP discovery (UDP:30303)" "" 17 2 1 2147483647 1 "$INSTDIR\geth.exe" "" "" "Ethereum" "" 30303 "" ""
 
   # Set default IPC endpoint (https://github.com/ethereum/EIPs/issues/147)
-  ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\roller.ipc"
-  ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "A" "HKLM" "\\.\pipe\roller.ipc"
+  ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "R" "HKLM" "\\.\pipe\exp.ipc"
+  ${EnvVarUpdate} $0 "ETHEREUM_SOCKET" "A" "HKLM" "\\.\pipe\exp.ipc"
 
   # Add instdir to PATH
   Push "$INSTDIR"
