@@ -47,8 +47,8 @@ func TestParseEnsAPIAddress(t *testing.T) {
 		},
 		{
 			description: "IPC Endpoint and TLD",
-			value:       "test:/data/testnet/roller.ipc",
-			endpoint:    "/data/testnet/roller.ipc",
+			value:       "test:/data/testnet/exp.ipc",
+			endpoint:    "/data/testnet/exp.ipc",
 			tld:         "test",
 		},
 		{
@@ -65,8 +65,8 @@ func TestParseEnsAPIAddress(t *testing.T) {
 		},
 		{
 			description: "IPC Endpoint and contract address",
-			value:       "314159265dD8dbb310642f98f50C066173C1259b@/data/testnet/roller.ipc",
-			endpoint:    "/data/testnet/roller.ipc",
+			value:       "314159265dD8dbb310642f98f50C066173C1259b@/data/testnet/exp.ipc",
+			endpoint:    "/data/testnet/exp.ipc",
 			addr:        common.HexToAddress("314159265dD8dbb310642f98f50C066173C1259b"),
 		},
 		{
@@ -83,8 +83,8 @@ func TestParseEnsAPIAddress(t *testing.T) {
 		},
 		{
 			description: "IPC Endpoint, TLD and contract address",
-			value:       "test:314159265dD8dbb310642f98f50C066173C1259b@/data/testnet/roller.ipc",
-			endpoint:    "/data/testnet/roller.ipc",
+			value:       "test:314159265dD8dbb310642f98f50C066173C1259b@/data/testnet/exp.ipc",
+			endpoint:    "/data/testnet/exp.ipc",
 			addr:        common.HexToAddress("314159265dD8dbb310642f98f50C066173C1259b"),
 			tld:         "test",
 		},
