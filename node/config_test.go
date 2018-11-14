@@ -24,8 +24,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/roller-project/roller/crypto"
-	"github.com/roller-project/roller/p2p"
+	"github.com/phihung9712/exp/crypto"
+	"github.com/phihung9712/exp/p2p"
 )
 
 // Tests that datadirs can be successfully created, be them manually configured
