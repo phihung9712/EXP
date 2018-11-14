@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/roller-project/roller/rpc"
-	"github.com/roller-project/roller/swarm"
-	"github.com/roller-project/roller/swarm/api"
+	"github.com/phihung9712/exp/rpc"
+	"github.com/phihung9712/exp/swarm"
+	"github.com/phihung9712/exp/swarm/api"
 
 	"github.com/docker/docker/pkg/reexec"
 )
