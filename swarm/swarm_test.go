@@ -19,7 +19,7 @@ package swarm
 import (
 	"testing"
 
-	"github.com/roller-project/roller/common"
+	"github.com/phihung9712/exp/common"
 )
 
 func TestParseEnsAPIAddress(t *testing.T) {
@@ -32,8 +32,8 @@ func TestParseEnsAPIAddress(t *testing.T) {
 	}{
 		{
 			description: "IPC endpoint",
-			value:       "/data/testnet/roller.ipc",
-			endpoint:    "/data/testnet/roller.ipc",
+			value:       "/data/testnet/exp.ipc",
+			endpoint:    "/data/testnet/exp.ipc",
 		},
 		{
 			description: "HTTP endpoint",
